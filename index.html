@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Color Generator</h1>
+    <div id = "outer-container">
+        <form id="detail-form">
+        <div id ='header-container'>
+            <div id = "baseColorPicker">
+                <label for="color">Choose base color:</label>
+                <input type="color" id = 'color'>
+            </div>
+            <div id = "basePaletterPicker">
+                <p>Color palate</p>
+                <select id="palatte">
+                    <option value="monochrome">monochrome</option>
+                    <option value="monochrome-dark">monochrome-dark</option>
+                    <option value="monochrome-light">monochrome-light</option>
+                    <option value="analogic">analogic</option>
+                    <option value="complement">complement</option>
+                    <option value="analogic-complement">analogic-complement</option>
+                    <option value="triad">triad</option>
+                    <option value="quad">quad</option>   
+                </select>
+            </div>
+            <div id = "colorTogenerate">
+                <label>How many colors?</label><input type="number" min="2" max="6" value="2" id="numberOfColors"/>
+                <button type="submit" id="generateColors">Generate</button>
+            </div>
+        </div>
+        </form>
+        <div id = 'color-container'>
+        </div>
+        <div id = 'color-name-container'>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
